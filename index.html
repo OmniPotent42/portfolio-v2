@@ -1,30 +1,33 @@
 <html>
   <head>
     <title>Turner Houghton - Serverless Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700|Shrikhand" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+    
   </head>
   <body>
     <header>
       <h1>Turner Houghton</h1>
-      <h2>Full-Stack Serverless Developer</h2>
+      <h2><i class="fa fa-bolt"></i> Full-Stack Developer <i class="fa fa-bolt"></i></h2>
     </header>
     <section>
-      <h3>Times are changing</h3>
-      <p>The world of development is a fast-paced, always changing environment. Frameworks come and go, languages go in and out of style, and applications get more and more complex. With each new architecture comes advancements in performance and efficiency. The last thing anyone wants is to get stuck in a tech stack that no one uses anymore and keeps your application from reaching its potential.</p>
+      <p>The world of development is a fast-paced, always changing environment. Frameworks come and go, languages go in and out of style, and applications get more and more complex.</p><p>With each new architecture comes advancements in performance and efficiency. The last thing anyone wants is to get stuck with an outdated application that can't keep up with today's demands.</p>
     </section>
     <section>
       <h3>Why Serverless?</h3>
-      <p>Serverless is the latest back-end architecture, born out of services like AWS Lambda. The idea behind it is simple - architect your environment in such a way that it doesn't matter which server is running it. This allows for highly scalable and low cost applications that can be run on large server clusters, like the ones provided by Amazon Web Services. Serverless architecture is set to replace traditional APIs and back ends as it is much easier to deploy, scale, and monitor.</p>
+      <p>Serverless is the latest back-end architecture, born out of services like AWS Lambda. This allows for highly scalable and low cost applications that can be run on large server clusters, like the ones provided by Amazon Web Services. The 3 primary advantages of a serverless architecture over a traditional one are speed, cost, and scalability.</p>
     </section>
     <section>
       <h3>Sounds great, but how does that apply to me?</h3>
-      <p>Serverless development has a plethora of use cases. You can combine AWS Lambda with a ton of different services to fit your needs. Need a fast, scalable API for your front-end application to use? Combine Lambda with API Gateway and DynamoDB for a highly scalable API that can handle hundreds of thousands of requests per second. Need highly available image resizing? Use Amazon S3 Events to automatically trigger image processing Lambdas. Almost anything that you can think of has a way of implementing it in a serverless architecture, and for a fraction of the price of traditional compute costs.</p>
+      <p>One of the most popular use cases for serverless is APIs. Using AWS DynamoDB, Lambda, and API Gateway allows us to create blazingly fast and scalable applications for a fraction of the cost of more traditional approaches. And let's be honest, every single web application can benefit from that.</p>
     </section>
     <section>
       <h3>Awesome! But where can I find someone with the skills to implement something like this?</h3>
-      <p>Luckily, you're at the right place. Turner Houghton has thousands of hours of experience architecting serverless APIs and the front end applications that consume them. Turner prefers the ecosystem provided by Amazon Web Services as he has found it is the most robust and feature rich environment to develop serverless applications in. Everything from website hosting to back end architecture can be provided on a single AWS account.</p>
-      <p>Here are some other skills that Turner has that come in handy working on serverless applications on AWS:</p>
+      <p>Turner Houghton has thousands of hours of experience architecting serverless APIs and the front end applications that consume them. Turner prefers the ecosystem provided by AWS as he has found it is the most robust and feature rich environment to develop serverless applications in. Everything from website hosting to back end architecture can be provided on a single AWS account.</p>
+      <p>Click on the button below to see some of Turner's other skills that assist him when working on serverless applications.</p>
+      <button>See Skills</button>
       <ul>
         <li>VueJS v2
           <ul>
@@ -56,7 +59,6 @@
     </section>
     <section>
       <h3>Are there any examples of applications that use this style of architecture?</h3>
-      <p>Absolutely, I'm so glad you asked!</p>
       <a href="https://awschat.net"><h4>AWS Chat</h4></a>
       <p>This was a passion project developed by Turner over the course of 3 months. The front end is a single page application built in VueJS, hosted on an AWS S3 bucket and features a responsive design. The back end is a serverless API, built with AWS services including Lambda, Cognito, API Gateway, DynamoDB, and Internet of Things. It is deployed using the Serverless Framework.</p>
       <p>A challenging part of this project was implementing Websockets on the front end for real-time updates. After much research and experimentation, he found that the AWS IoT (Internet of Things) service has a message broker that works perfectly as an MQTT client if configured in the right way. This allows the application to send notifications to users when a message is sent, or a chat invite is accepted.</p>
