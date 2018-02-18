@@ -5,29 +5,40 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
-    
   </head>
   <body>
     <header>
       <h1>Turner Houghton</h1>
       <h2><i class="fa fa-bolt"></i> Full-Stack Developer <i class="fa fa-bolt"></i></h2>
+      <nav>
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>Career</li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <section>
       <p>The world of development is a fast-paced, always changing environment. Frameworks come and go, languages go in and out of style, and applications get more and more complex.</p><p>With each new architecture comes advancements in performance and efficiency. The last thing anyone wants is to get stuck with an outdated application that can't keep up with today's demands.</p>
     </section>
     <section>
       <h3>Why Serverless?</h3>
-      <p>Serverless is the latest back-end architecture, born out of services like AWS Lambda. This allows for highly scalable and low cost applications that can be run on large server clusters, like the ones provided by Amazon Web Services. The 3 primary advantages of a serverless architecture over a traditional one are speed, cost, and scalability.</p>
+      <p><a target="_blank" href="https://aws.amazon.com/serverless/">Serverless</a> is the latest back-end architecture, born out of services like AWS Lambda. This allows for highly scalable and low cost applications that can be run on large server clusters, like the ones provided by Amazon Web Services. The 3 primary advantages of a serverless architecture over a traditional one are cost, scalability, and availability.</p>
     </section>
     <section>
-      <h3>Sounds great, but how does that apply to me?</h3>
+      <h3>Sounds great, but how does that apply to my company?</h3>
       <p>One of the most popular use cases for serverless is APIs. Using AWS DynamoDB, Lambda, and API Gateway allows us to create blazingly fast and scalable applications for a fraction of the cost of more traditional approaches. And let's be honest, every single web application can benefit from that.</p>
     </section>
-    <section>
+    <section id="skills">
       <h3>Awesome! But where can I find someone with the skills to implement something like this?</h3>
       <p>Turner Houghton has thousands of hours of experience architecting serverless APIs and the front end applications that consume them. Turner prefers the ecosystem provided by AWS as he has found it is the most robust and feature rich environment to develop serverless applications in. Everything from website hosting to back end architecture can be provided on a single AWS account.</p>
       <p>Click on the button below to see some of Turner's other skills that assist him when working on serverless applications.</p>
-      <button>See Skills</button>
+      <div class="btn-container">
+        <button class="skills">See Skills</button>
+      </div>
+    </section>
+    <section class="skills">
       <ul>
         <li>VueJS v2
           <ul>
@@ -57,27 +68,81 @@
         <li>HTML5/CSS3</li>
       </ul>
     </section>
-    <section>
-      <h3>Are there any examples of applications that use this style of architecture?</h3>
-      <a href="https://awschat.net"><h4>AWS Chat</h4></a>
-      <p>This was a passion project developed by Turner over the course of 3 months. The front end is a single page application built in VueJS, hosted on an AWS S3 bucket and features a responsive design. The back end is a serverless API, built with AWS services including Lambda, Cognito, API Gateway, DynamoDB, and Internet of Things. It is deployed using the Serverless Framework.</p>
-      <p>A challenging part of this project was implementing Websockets on the front end for real-time updates. After much research and experimentation, he found that the AWS IoT (Internet of Things) service has a message broker that works perfectly as an MQTT client if configured in the right way. This allows the application to send notifications to users when a message is sent, or a chat invite is accepted.</p>
-      <p>Overall, this was a great experience for Turner and hopes to use this as a backbone of knowledge for future appliations. If you want to learn more about the application, go to <a href="https://awschat.net/about">awschat.net/about</a></p>
+    <section class="projects" id="projects">
+      <h3>Can I see some examples of serverless applications that Turner has worked on?</h3>
+      <p>Absolutely! Check out the projects below!</p>
+      <h4><a href="https://awschat.net">AWS Chat</a></h4>
+      <div class="images">
+        <div class="gallery">
+          <img class="active" src="./awschat-1.png" alt="">
+          <img src="./awschat-2.png" alt="">
+          <img src="./awschat-3.png" alt="">
+        </div>
+        <nav>
+          <ul>
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </nav>
+      </div>
+      <dl>
+        <dt>Published Articles</dt>
+        <dd><a href="https://serverless.com/blog/realtime-updates-using-lambda-websockets-iot/">Serverless Blog Writeup</a></dd>
+        <dt>Back end</dt>
+        <dd>NodeJS, Lambda, API Gateway, DynamoDB, IoT, Serverless Framework</dd>
+        <dt>Front end</dt>
+        <dd>VueJS + Vuex, ES6, HTML5/CSS3, Webpack</dd>
+        <dt>Code (Github)</dt>
+        <dd><a href="https://github.com/OmniPotent42/chat-app-serverless">back end</a>, <a href="https://github.com/OmniPotent42/chat-app-vuejs">front end</a></dd>
+      </dl>
+      <button class="read-more">Read More</button>
+      <article>
+        <p>This was a passion project developed by Turner over the course of 3 months. The front end is a single page application built in VueJS, hosted on an AWS S3 bucket and features a responsive design.</p>
+        <p>A challenging part of this project was implementing Websockets on the front end for real-time updates. After much research and experimentation, he found that the AWS IoT (Internet of Things) service has a message broker that works perfectly as an MQTT client if configured in the right way. This allows the application to send notifications to users when a message is sent, or a chat invite is accepted.</p>
+        <p>Overall, this was a great experience for Turner and hopes to use this as a backbone of knowledge for future appliations. If you want to learn more about the application, you can go to the <a target="_blank" href="https://awschat.net/about">about page</a> on the site.</p>
+      </article>
       <h4>Xource API</h4>
-      <p>This is a project that is still in development. It is all configured to run inside an AWS VPC (virtual private cloud) and accesses an AWS Aurora MySQL database provided on AWS RDS, which is connected to by Lambda and API Gateway.</p>
+      <p>This is a project that is still in development. It is all configured to run inside an AWS VPC (virtual private cloud) and accesses an AWS Aurora MySQL database provided on AWS RDS, which is connected to by Lambda and API Gateway. This allows us to use a relational database for application storage instead of a document-based one.</p>
       <p>This has been a challenging but interesting project for Turner as he is responsible for creating and maintaining all of the serverless infrastructure for the team as well the deployment pipeline for doing so, which uses a combination of AWS CodeCommit, CodePipeline, and CodeBuild.</p>
     </section>
-    <section>
-      <h3>How do I get in contact with Turner Houghton?</h3>
-      <dl>
-        <dt>Email:</dt>
-        <dd>t.q.houghton@gmail.com</dd>
-        <dt>Phone: </dt>
-        <dd>801-615-0877</dd>
-      </dl>
-      <h4>Other Links</h4>
-      <a href="https://github.com/OmniPotent42">Github</a><br><a href="https://www.linkedin.com/in/turnerhoughton/">LinkedIn</a>
+    <section id="jobs">
+      <h3>Career Timeline</h3>
+      <h4>Junior Developer - Xource</h4>
     </section>
-    <footer></footer>
+    <section id="contact" class="contact">
+      <h3>How do I get in contact with Turner Houghton?</h3>
+      <div class="columns">
+        <div class="links">
+          <dl>
+            <dt>Email</dt>
+            <dd><a href="mailto:t.q.houghton@gmail.com">t.q.houghton@gmail.com</a></dd>
+            <dt>Phone</dt>
+            <dd><a href="tel:8016150877"></a>801-615-0877</dd>
+          </dl>
+          <h4>Other Links</h4>
+          <a href="https://github.com/OmniPotent42">Github</a><br><a href="https://www.linkedin.com/in/turnerhoughton/">LinkedIn</a>
+        </div>
+        <aside>
+          <img class="picture" src="./profile-pic.jpg" alt="">
+        </aside>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>Career</li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2018 Turner Houghton</p>
+    </footer>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
